@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import { Container } from "./styles";
 import { MdOutlinePhoneIphone } from "react-icons/md";
 import { FaHeadphones } from "react-icons/fa";
+import { BsCart4 } from "react-icons/bs";
 
 
 function MenuMobile({ menuIsVisible, setMenuIsVisible }) {
@@ -27,6 +28,9 @@ function MenuMobile({ menuIsVisible, setMenuIsVisible }) {
         </li>
         <li>
             <Link to="/acessorios"><FaHeadphones /> Acessórios</Link>
+        </li>
+        <li>
+            <Link to="/cart"><BsCart4 /> Carrinho</Link>
         </li>
       </ul>
       </nav>

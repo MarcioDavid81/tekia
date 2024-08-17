@@ -4,6 +4,8 @@ import styled from 'styled-components';
 import { RiMenu3Fill } from 'react-icons/ri';
 import { useState } from 'react';
 import MenuMobile from '../MenuMobile';
+import { LiaSearchSolid } from 'react-icons/lia';
+import { BsCart4 } from 'react-icons/bs';
 
 function Header() {
 
@@ -29,6 +31,47 @@ function Header() {
             width: 100px;
         }
     }
+    nav{
+        display: flex;
+        align-items: center;
+
+        input{
+            width: 300px;
+            height: 30px;
+            border-radius: 5px;
+            border: none;
+            padding: 5px;
+            margin-right: 10px;
+            border: none;
+            transition: all 0.3s ease;
+
+            &:focus{
+                outline: none;
+            }
+        }
+        button{
+            background: none;
+            border: none;
+            cursor: pointer;
+
+            svg{
+                font-size: 1.5rem;
+                color: #fff;
+                transition: all 0.3s ease;
+
+                &:hover{
+                    transform: scale(1.1);
+                    color: #E61593;
+                }
+            }
+        }
+
+        .search{
+            display: flex;
+            align-items: center;
+        }
+
+    }
     li{
         list-style: none;
     }
@@ -46,15 +89,42 @@ function Header() {
         }
      }
 
+     .cart a svg{
+            cursor: pointer;
+            transition: all 0.3s ease;
+
+            &:hover{
+                transform: scale(1.1);
+                color: #E61593;
+            }
+     }
+
+
     .mobile{
         display: none;
     }
 
+
+    @media (max-width: 924px){
+        nav .search input{
+            width: 200px;
+        }
+
+        nav ul li a{
+            font-size: 1.1rem;
+            margin-left: 30px;
+        }
+    }
      @media (max-width: 768px){
 
         nav {
             display: none;
         }
+
+        .cart{
+            display: none;
+        }
+        
         .mobile{
             display: block;
             cursor: pointer;
@@ -80,7 +150,15 @@ function Header() {
                         <img src={Logo} alt="Logo" />
                     </Link>
                 </div>
+
+                <div className="search">
+                </div>
+
                 <nav>
+                    <div className="search">
+                        <input type="text" placeholder="O que você procura?" />
+                        <button><LiaSearchSolid /></button>
+                    </div>
                     <ul>
                         <li>
                             <Link to="/">Home</Link>
@@ -89,7 +167,13 @@ function Header() {
                         </li>
                     </ul>
                 </nav>
+                <div className='cart'>
+                    <Link to="/cart">
+                        <BsCart4 size={35} color="#fff" />
+                    </Link>
+                </div>
             </div>
+
             <div>
                 <RiMenu3Fill onClick={() => setMenuIsVisible(true)} className="mobile" size={35} color="#fff" />
             </div>
