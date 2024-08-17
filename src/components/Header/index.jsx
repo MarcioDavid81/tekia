@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom';
 import Logo from '../../assets/logo.png';
 import styled from 'styled-components';
 import { RiMenu3Fill } from 'react-icons/ri';
+import { useState } from 'react';
+import MenuMobile from '../MenuMobile';
 
 function Header() {
 
@@ -57,12 +59,20 @@ function Header() {
             display: block;
             cursor: pointer;
             margin-right: 20px;
+
+            &:hover{
+                color: #E61593;
+            }
         }
     }
 
     `;
 
+    const [menuIsVisible, setMenuIsVisible] = useState(false);
+
     return (
+        <>
+        <MenuMobile menuIsVisible={menuIsVisible} setMenuIsVisible={setMenuIsVisible} />
         <NavBar>
             <div className='container'>
                 <div className='logo'>
@@ -81,9 +91,10 @@ function Header() {
                 </nav>
             </div>
             <div>
-                <RiMenu3Fill className="mobile" size={30} color="#fff" />
+                <RiMenu3Fill onClick={() => setMenuIsVisible(true)} className="mobile" size={35} color="#fff" />
             </div>
         </NavBar>
+        </>
     )
 }
 

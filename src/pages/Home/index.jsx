@@ -5,6 +5,7 @@ import { Title } from '../../components/Usuals/Title';
 import { HomeContainer } from './styles';
 
 function Home() {
+
     return (
         <>
             <Header/>
