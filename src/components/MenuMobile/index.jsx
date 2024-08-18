@@ -4,7 +4,7 @@ import { IoClose, IoHome } from "react-icons/io5";
 import { useEffect } from "react";
 import { Container } from "./styles";
 import { MdOutlinePhoneIphone } from "react-icons/md";
-import { FaHeadphones } from "react-icons/fa";
+import { FaHeadphones, FaRegUser } from "react-icons/fa";
 import { BsCart4 } from "react-icons/bs";
 
 
@@ -31,6 +31,9 @@ function MenuMobile({ menuIsVisible, setMenuIsVisible }) {
         </li>
         <li>
             <Link to="/cart"><BsCart4 /> Carrinho</Link>
+        </li>
+        <li>
+            <Link to="/login"><FaRegUser /> Login</Link>
         </li>
       </ul>
       </nav>

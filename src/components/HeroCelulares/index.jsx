@@ -2,7 +2,6 @@ import phone from '../../assets/phones.png';
 import sansung from '../../assets/sansung.png';
 import xiaomi from '../../assets/xiaomi.png';
 import Container from '../Container';
-import {Button} from '../Usuals/Button';
 import {Title} from '../Usuals/Title';
 import { HeroContainer } from './styles';
 
@@ -20,7 +19,6 @@ function HeroCelulares() {
             <div className="text">
                 <Title>Os aparelhos mais atuais</Title>
                 <p>Qualidade e estilo, que você só encontra aqui.</p>
-                <Button>Comprar</Button>
             </div>
         </Container>
         </HeroContainer>

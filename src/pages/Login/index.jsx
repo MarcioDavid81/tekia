@@ -4,16 +4,16 @@ import { Title } from "../../components/Usuals/Title";
 import Container from "../../components/Container";
 
 
-function Cart() {
+function Login() {
   return (
     <>
         <Header />
             <Container>
-                <Title>Cart</Title>
+                <Title>Login</Title>
             </Container>
         <Footer />
     </>
   );
 }
 
-export default Cart;
+export default Login;

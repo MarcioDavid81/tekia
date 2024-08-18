@@ -4,6 +4,9 @@ import styled from "styled-components";
 export const Button = styled.button`
     background-color: #E61593;
     color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 10px 20px;
     border: none;
     border-radius: 25px;
