@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 export const StyledCart = styled.div`
     height: auto;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
