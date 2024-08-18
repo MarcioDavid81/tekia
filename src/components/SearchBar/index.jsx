@@ -1,12 +1,17 @@
 import { LiaSearchSolid } from "react-icons/lia";
 import { StyledSearchBar } from "./styles";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import fetchProducts from "../../api/fetchProducts";
+import SearchContext from "../../context/SearchContext";
+
+
 
 
 function SearchBar() {
 
     const [search, setSearch] = useState('');
+
+    const { name } = useContext(SearchContext);
 
     const searchItem = async (event) => {
         event.preventDefault();
@@ -19,6 +24,7 @@ function SearchBar() {
 
   return (
     <StyledSearchBar onSubmit={searchItem}>
+        {name}
         <input
             type="search"
             value={search}

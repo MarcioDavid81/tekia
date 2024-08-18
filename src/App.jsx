@@ -1,3 +1,4 @@
+import Provider from './context/Provider'
 import AppRoutes from './routes'
 import { createGlobalStyle } from 'styled-components'
 
@@ -19,10 +20,11 @@ function App() {
 
 
   return (
-    <>
+    <Provider>
       <GlobalStyle />
       <AppRoutes />
-    </>
+    </Provider>
+    
 
   )
 }

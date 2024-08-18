@@ -9,6 +9,7 @@ import ProductCard from "../../components/ProductCard";
 
 
 
+
 function Celulares() {
 
   const [phones, setPhones] = useState([]);
@@ -24,8 +25,8 @@ function Celulares() {
   return (
     
 
+   
     <>
-
         <Header/>
         <HeroCelulares/>
         <Container>
@@ -39,6 +40,7 @@ function Celulares() {
         </Container>
         <Footer/>
     </>
+
   );
 }
 
