@@ -5,11 +5,17 @@ import propTypes from "prop-types";
 
 function Provider({ children }) {
 
-    const [name, setName] = useState(['Tekia Tecnologia']);
+    const [phones, setPhones] = useState([]);
+    const [acessories, setAcessories] = useState([]);
+    const [cartItems, setCartItems] = useState([]);
 
     const value = {
-        name,
-        setName,        
+        phones,
+        setPhones,
+        acessories,
+        setAcessories,
+        cartItems,
+        setCartItems,    
     };
 
   return (

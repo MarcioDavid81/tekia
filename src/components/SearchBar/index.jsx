@@ -8,23 +8,24 @@ import SearchContext from "../../context/SearchContext";
 
 
 function SearchBar() {
+    
+    const { setPhones, setAcessories } = useContext(SearchContext);
 
     const [search, setSearch] = useState('');
-
-    const { name } = useContext(SearchContext);
 
     const searchItem = async (event) => {
         event.preventDefault();
         const products = await fetchProducts(search);
 
-        console.log(products);
+        setPhones(products);
+
+        setAcessories(products);
 
         setSearch('');
     }
 
   return (
     <StyledSearchBar onSubmit={searchItem}>
-        {name}
         <input
             type="search"
             value={search}

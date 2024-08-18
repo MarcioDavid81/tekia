@@ -3,11 +3,19 @@ import { Button } from "../Usuals/Button";
 import { StyledCard } from "./styles";
 import propTypes from "prop-types";
 import formatCurrency from "../../Utils/formatCurrency";
+import { useContext } from "react";
+import SearchContext from "../../context/SearchContext";
 
 
 function ProductCard({ data }) {
 
     const { title, price, thumbnail } = data;
+
+    const { cartItems, setCartItems } = useContext(SearchContext);
+
+    const handleAddCart = () => {
+        setCartItems([...cartItems, data]);
+    }
 
   return (
     <StyledCard>
@@ -19,7 +27,7 @@ function ProductCard({ data }) {
             <h3 className="card_title">{title}</h3>
             <p className="card_price">{formatCurrency(price, 'BRL')}</p>
         </div>
-        <Button><FaCartPlus /></Button>
+        <Button onClick={handleAddCart}><FaCartPlus /></Button>
     </StyledCard>
   );
 }
