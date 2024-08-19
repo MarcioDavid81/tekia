@@ -19,7 +19,7 @@ function Cadastro() {
   const navigate = useNavigate();
 
   async function register(e) {
-    e.preventDeafault();
+    e.preventDefault();
     if (email !== '' && senha !== '') {
       await createUserWithEmailAndPassword(auth, email, senha)
           .then(() => {
