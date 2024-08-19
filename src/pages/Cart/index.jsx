@@ -10,6 +10,7 @@ import { Button } from "../../components/Usuals/Button";
 import formatCurrency from "../../Utils/formatCurrency";
 
 
+
 function Cart() {
 
   const { cartItems } = useContext(SearchContext);
