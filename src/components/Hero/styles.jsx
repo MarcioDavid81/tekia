@@ -64,16 +64,17 @@ export const HeroContainer = styled.section`
         transform: translate(-50%, -50%);
         color: #fff;
 
-        .primary_title{
+        h2{
             font-family: 'Orbitron', sans-serif;
             font-size: 4.5rem;
             margin-bottom: 20px;
             color: transparent;
             -webkit-text-stroke: 1px white;
+            
         }
 
         p{
-            font-size: 1.5em;
+            font-size: 1.5rem;
             font-weight: 300;
             line-height: 1;
         }
@@ -107,6 +108,74 @@ export const HeroContainer = styled.section`
             }
             100%{
                 width: 0%;
+            }
+        }
+    }
+
+    @media (max-width: 1120px){
+        padding-top: 5%;
+        padding-bottom: 5%;
+
+        .images{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .images .caixa{
+            position: relative;
+            top: 0;
+            left: 0;
+            margin-bottom: 0;
+        }
+
+        .images .fone2{
+            position: relative;
+            top: 0;
+            right: 0;
+            margin-bottom: 0;
+        }
+
+        .images .fone3{
+            position: relative;
+            top: 0;
+            left: 0;
+            margin-bottom: 0;
+        }
+
+        .text{
+            position: relative;
+            top: 0;
+            left: 0;
+            transform: translate(0, 0);
+            text-align: center;
+
+            .primary_title{
+                font-size: 3rem;
+            }
+
+   
+        }
+
+    }
+
+    @media (max-width: 768px){
+        .images img{
+            width: 100%;
+        }
+
+        .text{
+            .primary_title{
+                font-size: 2rem;
+            }
+
+            p{
+                font-size: 1rem;
+            }
+
+            span.marca{
+                font-size: 1.5rem;
             }
         }
     }
