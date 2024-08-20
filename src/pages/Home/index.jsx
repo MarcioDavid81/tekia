@@ -74,47 +74,40 @@ function Home() {
             <Container>
                 <HomeContainer>
                         
-                        <section className='items'>
-                            <Title>O QUE HÁ DE MAIS MODERNO</Title>
-                            <div className="itmes_content">
-                                <img className='watch' src={watches} alt="Smart Watches" />
-                            </div>
-                        </section>
-
-                        <Title>NOSSOS MODELOS</Title>
-
-                        <section className='models_container' ref={el}>
-
-                            <div className="models_content">
-
-                                <div className="models_item" id='model_1'>
-                                    <img src={midni} alt="" />
-                                    <span className="models_tag">Novo</span>
-                                    <h4 className="models_title">Smart Watch S8</h4>
-                                    <p className="models_description">À partir de <strong>R$800,00</strong></p>
+                            <section className='items'>
+                                <Title>O QUE HÁ DE MAIS MODERNO</Title>
+                                <div className="itmes_content">
+                                    <img className='watch' src={watches} alt="Smart Watches" />
                                 </div>
-                           
-
+                            </section>
+                            <Title>NOSSOS MODELOS</Title>
+                            <section className='models_container' ref={el}>
+                                <div className="models_content">
+                                    <div className="models_item" id='model_1'>
+                                        <img src={midni} alt="" />
+                                        <span className="models_tag">Novo</span>
+                                        <h4 className="models_title">Smart Watch S8</h4>
+                                        <p className="models_description">À partir de <strong>R$800,00</strong></p>
+                                    </div>
                             
-                                <div className="models_item" id='model_2'>
-                                    <img src={red} alt="" />
-                                    <span className="models_tag">Novo</span>
-                                    <h4 className="models_title">Smart Watch S8</h4>
-                                    <p className="models_description">À partir de <strong>R$800,00</strong></p>
+                            
+                                    <div className="models_item" id='model_2'>
+                                        <img src={red} alt="" />
+                                        <span className="models_tag">Novo</span>
+                                        <h4 className="models_title">Smart Watch S8</h4>
+                                        <p className="models_description">À partir de <strong>R$800,00</strong></p>
+                                    </div>
+                            
+                            
+                                    <div className="models_item" id='model_3'>
+                                        <img src={withe} alt="" />
+                                        <span className="models_tag">Novo</span>
+                                        <h4 className="models_title">Smart Watch S8</h4>
+                                        <p className="models_description">À partir de <strong>R$800,00</strong></p>
+                                    </div>
                                 </div>
-                        
-
-                           
-                                <div className="models_item" id='model_3'>
-                                    <img src={withe} alt="" />
-                                    <span className="models_tag">Novo</span>
-                                    <h4 className="models_title">Smart Watch S8</h4>
-                                    <p className="models_description">À partir de <strong>R$800,00</strong></p>
-                                </div>
-
-                            </div>
-
-                        </section>
+                            </section>
+                            
                 </HomeContainer>
             </Container>
             <Footer/>

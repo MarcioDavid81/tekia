@@ -38,6 +38,11 @@ export const HomeContainer = styled.section`
         .models_item img{
             width: 100%;
             max-width: 250px;
+
+            &:hover{
+                transform: scale(1.02);
+                transition: 0.5s;
+            }
         }
 
         .models_item {

@@ -7,6 +7,7 @@ import { NavBar } from './styles';
 import UserButton from '../UserButton';
 import CartButton from '../CartButton';
 import SearchBar from '../SearchBar';
+import { motion } from 'framer-motion';
 
 
 function Header() {    
@@ -17,7 +18,12 @@ function Header() {
         <>
         <MenuMobile menuIsVisible={menuIsVisible} setMenuIsVisible={setMenuIsVisible} />
         <NavBar>
-            <div className='container'>
+            <motion.div
+                className='container'
+                initial={{ y: -250, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.5 }}
+            >
                 <div className='logo'>
                     <Link to="/">                    
                         <img src={Logo} alt="Logo" />
@@ -41,7 +47,7 @@ function Header() {
 
                 <UserButton />                
                
-            </div>
+            </motion.div>
 
             <div>
                 <RiMenu3Fill onClick={() => setMenuIsVisible(true)} className="mobile" size={35} color="#fff" />
