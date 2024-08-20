@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import Home from './pages/Home';
 import Celulares from './pages/Celulares';
 import Acessorios from './pages/Acessorios';
@@ -8,6 +8,9 @@ import Cadastro from './pages/Cadastro';
 
 
 function AppRoutes() {
+
+    const location = useLocation();
+
     return (
         <BrowserRouter>
         <Routes>

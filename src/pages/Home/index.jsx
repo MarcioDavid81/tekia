@@ -9,8 +9,6 @@ import { HomeContainer } from './styles';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import watches from '../../assets/watches.png';
-import watch3 from '../../assets/watch3.png';
-import watch4 from '../../assets/watch4.png';
 import midni from '../../assets/midnigth.png';
 import red from '../../assets/red.png';
 import withe from '../../assets/white.png';
