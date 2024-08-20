@@ -43,8 +43,6 @@ function Cadastro() {
 
                 <Title>Cadastro</Title>
 
-                <p>Dados Pessoais</p>
-
                 <input
                   type="email"
                   placeholder="Email..."

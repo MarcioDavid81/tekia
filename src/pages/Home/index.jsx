@@ -1,6 +1,7 @@
 import Container from '../../components/Container';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
+import Hero from '../../components/Hero';
 import { Title } from '../../components/Usuals/Title';
 import { HomeContainer } from './styles';
 
@@ -9,6 +10,7 @@ function Home() {
     return (
         <>
             <Header/>
+            <Hero/>
             <Container>
                 <HomeContainer>
                     <section>

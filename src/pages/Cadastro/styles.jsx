@@ -11,17 +11,10 @@ export const StyledCadastro = styled.form`
     padding: 20px;
     margin: 20px;
     border-radius: 10px;
-    max-width: 600px;
+    width: 300px;
     margin: 0 auto;
 
     input{
-        width: 100%;
-        padding: 10px;
-        border: 1px solid black;
-        border-radius: 5px;
-    }
-
-    select{
         width: 100%;
         padding: 10px;
         border: 1px solid black;
@@ -43,6 +36,8 @@ export const StyledCadastro = styled.form`
         }
     }
 
-    @media (max-width: 768px){}
-    width: 100%;
+    @media (max-width: 768px){
+        width: 100%;
+    }
+    
 `;

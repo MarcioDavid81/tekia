@@ -53,15 +53,18 @@ export const StyledSearchBar = styled.form`
     @media (max-width: 924px){
         input{
             width: 200px;
+            margin-left: 5px;
         }
 
     }
 
-    @media (max-width: 768px){
+    @media (max-width: 500px){
         input{
-            display: none;
+            width: 150px;
         }
-        button{
+    }
+    @media (max-width: 390px){
+        input, button{
             display: none;
         }
     }
