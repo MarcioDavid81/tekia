@@ -9,9 +9,12 @@ import { HomeContainer } from './styles';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import watches from '../../assets/watches.png';
-import watch2 from '../../assets/watch2.png';
 import watch3 from '../../assets/watch3.png';
 import watch4 from '../../assets/watch4.png';
+import midni from '../../assets/midnigth.png';
+import red from '../../assets/red.png';
+import withe from '../../assets/white.png';
+
 
 function Home() {
 
@@ -87,7 +90,7 @@ function Home() {
                             <div className="models_content">
 
                                 <div className="models_item" id='model_1'>
-                                    <img src={watch2} alt="" />
+                                    <img src={midni} alt="" />
                                     <span className="models_tag">Novo</span>
                                     <h4 className="models_title">Smart Watch S8</h4>
                                     <p className="models_description">À partir de <strong>R$800,00</strong></p>
@@ -96,7 +99,7 @@ function Home() {
 
                             
                                 <div className="models_item" id='model_2'>
-                                    <img src={watch3} alt="" />
+                                    <img src={red} alt="" />
                                     <span className="models_tag">Novo</span>
                                     <h4 className="models_title">Smart Watch S8</h4>
                                     <p className="models_description">À partir de <strong>R$800,00</strong></p>
@@ -105,7 +108,7 @@ function Home() {
 
                            
                                 <div className="models_item" id='model_3'>
-                                    <img src={watch4} alt="" />
+                                    <img src={withe} alt="" />
                                     <span className="models_tag">Novo</span>
                                     <h4 className="models_title">Smart Watch S8</h4>
                                     <p className="models_description">À partir de <strong>R$800,00</strong></p>
