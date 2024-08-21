@@ -22,7 +22,6 @@ export const HeroContainer = styled.section`
             transition: 0.3s;
 
             &:hover{
-                filter: drop-shadow(1px 1px 1px #E61593);
                 animation: pulse 1s forwards;
             }
         }
@@ -32,7 +31,6 @@ export const HeroContainer = styled.section`
             transition: 0.3s;
 
             &:hover{
-                filter: drop-shadow(1px 1px 1px #E61593);
                 animation: pulse 1s forwards;
             }
         }
@@ -42,7 +40,6 @@ export const HeroContainer = styled.section`
             transition: 0.3s;
 
             &:hover{
-                filter: drop-shadow(1px 1px 1px #E61593);
                 animation: pulse 1s forwards;
             }
         }

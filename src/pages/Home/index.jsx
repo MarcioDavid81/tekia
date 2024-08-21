@@ -51,8 +51,8 @@ function Home() {
                 scrollTrigger: {
                     trigger: ".models_item",
                     scrub: 1,
-                    start: 'top 800px',
-                    end: 'bottom 900px',
+                    start: 'top 700px',
+                    end: 'bottom 800px',
                     // markers: true,
                 }
             })

@@ -13,14 +13,14 @@ function AppRoutes() {
 
     return (
         <BrowserRouter>
-            <Routes location={location} key={location.pathname}>
-            <Route path="/" element={<Home />} />
-            <Route path="/celulares" element={<Celulares />} />
-            <Route path="/acessorios" element={<Acessorios />} />
-            <Route path="/cart" element={<Cart />} />            
-            <Route path="/login" element={<Login />} />
-            <Route path="/cadastro" element={<Cadastro />} />          
-        </Routes>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/celulares" element={<Celulares />} />
+                <Route path="/acessorios" element={<Acessorios />} />
+                <Route path="/cart" element={<Cart />} />            
+                <Route path="/login" element={<Login />} />
+                <Route path="/cadastro" element={<Cadastro />} />          
+            </Routes>
         </BrowserRouter>
     );
 }
