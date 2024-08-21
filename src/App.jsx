@@ -1,4 +1,3 @@
-import { ToastContainer } from 'react-toastify'
 import Provider from './context/Provider'
 import AppRoutes from './routes'
 import { createGlobalStyle } from 'styled-components'
@@ -22,7 +21,6 @@ function App() {
 
   return (
     <Provider>
-      <ToastContainer autoClose={3000} />
       <GlobalStyle />
       <AppRoutes />
     </Provider>
