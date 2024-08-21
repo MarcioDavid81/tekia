@@ -8,6 +8,7 @@ import { useContext } from "react";
 import SearchContext from "../../context/SearchContext";
 import { Button } from "../../components/Usuals/Button";
 import formatCurrency from "../../Utils/formatCurrency";
+import { motion } from "framer-motion";
 
 
 
@@ -29,15 +30,25 @@ function Cart() {
             <Container>
               <StyledCart>
                 <Title>CARRINHO DE COMPRAS</Title>
-                <div className="cart_item">
+                <motion.div
+                  className="cart_item"
+                  initial={{ opacity: 0, x: -100 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 1 }}
+                >
 
                   {cartItems.map((cartItem) => (
                     <CartItem key={cartItem.id} data={cartItem} />
                   ))}
 
-                </div>
+                </motion.div>
 
-                <div className="cart_resume">
+                <motion.div
+                  className="cart_resume"
+                  initial={{ opacity: 0, x: -100 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 1 }}
+                >
                   <div className="cart_resume_subtotal">
                     <span>Subtotal</span>
                     <span>{formatCurrency(subTotalPrice, "BRL")}</span>
@@ -55,7 +66,7 @@ function Cart() {
                   >
                     FINALIZAR COMPRA
                   </Button>
-                </div>
+                </motion.div>
               </StyledCart>
             </Container>
         <Footer />
