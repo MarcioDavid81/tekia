@@ -7,6 +7,8 @@ import { StyledPhones } from "./styles";
 import fetchProducts from "../../api/fetchProducts";
 import ProductCard from "../../components/ProductCard";
 import SearchContext from "../../context/SearchContext";
+import SocialCard from "../../components/SocialCard";
+import WaButton from "../../components/WaButton";
 
 
 
@@ -38,6 +40,8 @@ function Celulares() {
                     ))
                 }
             </StyledPhones>
+            <SocialCard />
+            <WaButton />
         </Container>
         <Footer/>
     </>

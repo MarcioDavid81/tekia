@@ -1,3 +1,4 @@
+import ScrollToTop from './components/ScrollToTop'
 import Provider from './context/Provider'
 import AppRoutes from './routes'
 import { createGlobalStyle } from 'styled-components'
@@ -23,6 +24,7 @@ function App() {
     <Provider>
       <GlobalStyle />
       <AppRoutes />
+      <ScrollToTop />
     </Provider>
 
   )

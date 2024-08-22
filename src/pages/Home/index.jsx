@@ -12,6 +12,8 @@ import watches from '../../assets/watches.png';
 import midni from '../../assets/midnigth.png';
 import red from '../../assets/red.png';
 import withe from '../../assets/white.png';
+import SocialCard from '../../components/SocialCard';
+import WaButton from '../../components/WaButton';
 
 
 function Home() {
@@ -109,6 +111,11 @@ function Home() {
                             </section>
                             
                 </HomeContainer>
+
+                <SocialCard />
+
+                <WaButton />
+
             </Container>
             <Footer/>
         </>

@@ -7,6 +7,8 @@ import { StyledAcessories } from "./styles";
 import fetchProducts from "../../api/fetchProducts";
 import ProductCard from "../../components/ProductCard";
 import SearchContext from "../../context/SearchContext";
+import SocialCard from "../../components/SocialCard";
+import WaButton from "../../components/WaButton";
 
 function Acessorios() {
 
@@ -30,6 +32,8 @@ function Acessorios() {
                     ))
                 }
             </StyledAcessories>
+            <SocialCard />
+            <WaButton />
         </Container>
         <Footer/>
     </>
